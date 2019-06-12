@@ -1,0 +1,136 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-left: 300;
+  margin-right: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.info {
+       text-align: left; 
+       margin-top: -280px;
+       line-height: 50px;
+       color: green;
+       font-family: arial;
+       font-size: 20px;
+       }
+.content { 
+           text-align: right; 
+       margin-top: -270px;
+       
+       margin-left: 690px;
+       margin-right: auto;
+       color: red;
+       font-family: arial;
+       font-size: 30px;
+       line-height: 50px;
+        }
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 500px; 
+ font-size: 30px;
+ font-style: oblique;
+ text-shadow: 2px 2px 5px green;
+
+
+</style>
+</head>
+<body>
+
+<h1>Mudit Sinha</h1>
+<h3>About ME:</h3>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="C:\Users\ADMIN\Desktop\c.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>M.Tech(IT)<BR>Student</h1>
+       <BR> 
+      <p>IIPS (DAVV)</p>
+      <BR> 
+      <p>INDORE..</p>
+    </div>
+  </div>
+</div>
+
+
+
+<p class="info">
+persiaprince857@gmail.com<BR>
+E-149 NMR,Bhopal<BR>
+04-08-1999<BR>
+github.com/4Muditsinha<BR>
+6265290180
+</p>
+<p class="content">
+I am a very hardworking person and imaginative person who is highly aware of all the technological trends.Having skill sets like html,css and javascript.
+I want to contribute to this industry as much as i can.
+</p><BR>
+<HR SIZE=3 WIDTH=105% COLOR="BLUE"><BR>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>INTEREST</h2>
+    <p>Web developing</p>
+    <p>Story Writing</p>
+    <p>Meditation</p>
+    <p>Reading</p>
+    <p>Chess</p>
+    
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>LANGUAGE</h2>
+    <p>ENGLISH</p>
+    <p>HINDI</p>
+    <p>SANSKRIT</p>
+  </div>
+</div>
+
+</body>
+</html>
