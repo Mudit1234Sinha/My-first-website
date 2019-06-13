@@ -2,7 +2,10 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">	
 <style>
 * {
   box-sizing: border-box;
@@ -65,17 +68,18 @@ body {
 .article {
          
          line-spacing: 3px;
-         word-spacing: 3px;
+        
 	}
 .theory {
           
          
          line-spacing: 3px;
-         word-spacing: 3px;
+        
 	}
 	h3 {
 		font-size:30px;
 		line-height: 2.0;
+		 word-spacing: 4px;
 	}
 
 a {
@@ -90,6 +94,25 @@ a {
   }
 }
 
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+	@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
           
 </style>
 </head>
@@ -109,7 +132,8 @@ a {
    <U><h2>Into the future or living in the past?</h2></U>
      </FONT>
       
-      <IMG SRC="d.jpg">
+      <IMG SRC="d.jpg"  data-src-600px="image-600px.jpg"
+     data-src-800px="image-800px.jpg">
       
       
       <p class="article"><h3>I expect you have heard of STEM. Just in case, STEM stands for learning of Science, Technology, Engineering and Mathematics. What is important is it is being taught in an interdisciplinary and applied approach, not as separate and discrete subjects but as a cohesive learning approach encompassing real-world applications based on the reality of real operational functions.
