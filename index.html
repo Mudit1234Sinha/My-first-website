@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">	
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -112,6 +114,26 @@ p.outset2:hover
              margin: 20px;
              box-shadow: 10px 10px 5px black;
             }
+	@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+	@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
 </style>
 </head>
 <body>
@@ -130,9 +152,11 @@ p.outset2:hover
 
 <button class="btn"><i class="fa fa-contact"></i> Contact</button>
 </A>
-<IMG SRC="a.jpg" HEIGHT="500" WIDTH=100%>
+<IMG SRC="a.jpg" HEIGHT="500" WIDTH=100% data-src-600px="image-600px.jpg"
+     data-src-800px="image-800px.jpg">
 <div class="centered"><p class="write">“Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.” .</p>”</div>
-<IMG SRC="b.jpg" style="max-width:40%;height:auto;" align="right">
+<IMG SRC="b.jpg" style="max-width:40%;height:auto;" align="right" data-src-600px="image-600px.jpg"
+     data-src-800px="image-800px.jpg">
 <FONT FACE="LUCIDA HANDWRITING" SIZE="6">
 <BR><BR>
 <p align="center">I am an Ever learning guy in the field of computers.Also very passionate about my field,as i have a steady source of motivation and i love what i do.
